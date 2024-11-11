@@ -1,0 +1,122 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+
+.signup-container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.signup-container h2 {
+    color: #069175;
+    margin-bottom: 20px;
+    font-weight: 700; 
+}
+
+.signup-container input {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.signup-container input.error-placeholder {
+    border-color: rgb(186, 182, 182);
+    color: red;
+    animation: shake 0.3s ease-in-out;
+}
+
+.signup-container input.error-placeholder::placeholder {
+    color: red;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-5px); }
+    40%, 80% { transform: translateX(5px); }
+}
+
+.signup-container button {
+    width: 90%;
+    padding: 12px;
+    background-color: #069175;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500; 
+    transition: background-color 0.3s;
+}
+
+.signup-container button:hover {
+    background-color: #1ac0c3;
+}
+
+.signup-container p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signup-container a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.signup-container a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: left;
+    font-weight: 500; 
+}
+
+.form-error {
+    margin-top: 15px;
+    font-weight: 700;
+    color: red;
+}
+
+.success-message {
+    color: green;
+    margin-top: 10px;
+    font-weight: 500; 
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.password-group {
+    position: relative;
+}
+
+.password-group input {
+    width: 90%;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    color: #069175;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
